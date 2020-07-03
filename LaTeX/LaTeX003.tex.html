@@ -1,0 +1,239 @@
+<html><head><style type="text/css">pre { margin: 1px }
+			.fmt0 {  } /* normal */
+			.fmt1 {  } /* background */
+			.fmt2 { background-color: #ffcabf; } /* line:error */
+			.fmt3 { background-color: #fffbbf; } /* line:warning */
+			.fmt4 { background-color: #bfd6ff; } /* line:badbox */
+			.fmt5 {  } /* line:bookmark */
+			.fmt6 {  } /* line:bookmark0 */
+			.fmt7 {  } /* line:bookmark1 */
+			.fmt8 {  } /* line:bookmark2 */
+			.fmt9 {  } /* line:bookmark3 */
+			.fmt10 {  } /* line:bookmark4 */
+			.fmt11 {  } /* line:bookmark5 */
+			.fmt12 {  } /* line:bookmark6 */
+			.fmt13 {  } /* line:bookmark7 */
+			.fmt14 {  } /* line:bookmark8 */
+			.fmt15 {  } /* line:bookmark9 */
+			.fmt16 { color: #555580; } /* magicComment */
+			.fmt17 { background-color: #a8cf83; } /* commentTodo */
+			.fmt18 { color: #808080; } /* comment */
+			.fmt19 { color: #800000; } /* keyword */
+			.fmt20 { font-weight: 700;color: #0095ff; } /* extra-keyword */
+			.fmt21 { color: #808000; } /* math-keyword */
+			.fmt22 { border-bottom: 1px solid #0000ff;color: #0000ff; } /* link */
+			.fmt23 { font-weight: 700;color: #0055ff; } /* align-ampersand */
+			.fmt24 { color: #008080; } /* verbatim */
+			.fmt25 { color: #800000; } /* sweave-block */
+			.fmt26 { font-weight: 700;color: #0095ff; } /* sweave-delimiter */
+			.fmt27 { color: #800000; } /* pweave-block */
+			.fmt28 { font-weight: 700;color: #0095ff; } /* pweave-delimiter */
+			.fmt29 { color: #804000; } /* picture */
+			.fmt30 { color: #c06000; } /* picture-keyword */
+			.fmt31 { font-weight: 700;background-color: #ffff7f; } /* braceMatch */
+			.fmt32 { font-weight: 700;color: #ffff7f;background-color: #c00000; } /* braceMismatch */
+			.fmt33 { color: #000000;background-color: #ffef0b; } /* search */
+			.fmt34 { color: #008000; } /* numbers */
+			.fmt35 { color: #509600; } /* math-delimiter */
+			.fmt36 { color: #ff0000; } /* text */
+			.fmt37 { color: #ff0088; } /* escapeseq */
+			.fmt38 { border-bottom: 1px dashed #ff0000; } /* spellingMistake */
+			.fmt39 { border-bottom: 1px dashed #008000; } /* wordRepetition */
+			.fmt40 { border-bottom: 1px dashed #008000; } /* wordRepetitionLongRange */
+			.fmt41 { text-decoration: line-through; } /* badWord */
+			.fmt42 { border-bottom: 1px dashed #000080; } /* grammarMistake */
+			.fmt43 { background-color: #00ffa0; } /* grammarMistakeSpecial1 */
+			.fmt44 { background-color: #00c0ff; } /* grammarMistakeSpecial2 */
+			.fmt45 { background-color: #00ff00; } /* grammarMistakeSpecial3 */
+			.fmt46 { background-color: #c8ff61; } /* grammarMistakeSpecial4 */
+			.fmt47 { background-color: #ffbf9f; } /* latexSyntaxMistake */
+			.fmt48 { font-style: italic;color: #0000ff; } /* temporaryCodeCompletion */
+			.fmt49 { color: #000080; } /* environment */
+			.fmt50 { color: #008000; } /* referencePresent */
+			.fmt51 { border-bottom: 1px dashed #008000;color: #008000; } /* referenceMissing */
+			.fmt52 { border-bottom: 1px dashed #800080;color: #800080; } /* referenceMultiple */
+			.fmt53 { color: #008000; } /* citationPresent */
+			.fmt54 { border-bottom: 1px dashed #008000;color: #008000; } /* citationMissing */
+			.fmt55 { color: #008000; } /* packagePresent */
+			.fmt56 { border-bottom: 1px dashed #008000;color: #008000; } /* packageMissing */
+			.fmt57 { font-weight: 700;color: #000000; } /* structure */
+			.fmt58 { background-color: #eeeeff; } /* current */
+			.fmt59 { background-color: #b2d8ff; } /* selection */
+			.fmt60 { background-color: #ffaaaa; } /* replacement */
+			.fmt61 { text-decoration: line-through;background-color: #ffaaaa; } /* diffDelete */
+			.fmt62 { background-color: #aaffaa; } /* diffAdd */
+			.fmt63 { background-color: #ffff50; } /* diffReplace */
+			.fmt64 { background-color: #ddffcc; } /* previewSelection */
+			.fmt65 { font-weight: 700;color: #0095ff; } /* txs-test */
+			.fmt66 { font-weight: 700; } /* txs-test-summary */
+			.fmt67 { color: #008000; } /* txs-test-pass */
+			.fmt68 { color: #c00000; } /* txs-test-fail */
+			.fmt69 { color: #ea8800; } /* txs-test-warn */
+			.fmt70 { color: #808000; } /* txs-test-qdebug */
+			.fmt71 { color: #ffa500; } /* dtx:guard */
+			.fmt72 { font-weight: 700;color: #006400; } /* dtx:macro */
+			.fmt73 { color: #008080; } /* dtx:verbatim */
+			.fmt74 { color: #cc8100; } /* dtx:specialchar */
+			.fmt75 { font-weight: 700;color: #10c010; } /* dtx:commands */
+			.fmt76 { color: #b200ff; } /* lua:keyword */
+			.fmt77 { color: #808080; } /* lua:comment */
+			.fmt78 { color: #804000; } /* asymptote:block */
+			.fmt79 { color: #800080; } /* asymptote:keyword */
+			.fmt80 { color: #808000; } /* asymptote:type */
+			.fmt81 { color: #008000; } /* asymptote:numbers */
+			.fmt82 { color: #000080; } /* asymptote:string */
+			.fmt83 { color: #808080; } /* asymptote:comment */
+			.fmt84 { color: #808080; } /* qtscript:comment */
+			.fmt85 { color: #008000; } /* qtscript:string */
+			.fmt86 { color: #000080; } /* qtscript:number */
+			.fmt87 { color: #808000; } /* qtscript:keyword */
+			.fmt88 { color: #800000; } /* qtscript:txs-variable */
+			.fmt89 { font-style: italic; } /* qtscript:txs-function */
+			.fmt90 { background-color: #ffff7f; } /* preedit */
+		</style></head><body><pre><span class="fmt19">\documentclass</span>[10pt,a4paper]{<span class="fmt55">article</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>[utf8]{<span class="fmt55">inputenc</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">xeCJK</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>[T1]{<span class="fmt55">fontenc</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">amsmath</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">amsfonts</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">amssymb</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">graphicx</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">listings</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">xcolor</span>} </pre>
+		<pre><span class="fmt19">\author</span>{ason} </pre>
+		<pre><span class="fmt19">\title</span>{LaTeX特殊符号} </pre>
+		<pre><span class="fmt19">\lstset</span>{ </pre>
+		<pre>	rulesepcolor= <span class="fmt19">\color</span>{gray}, <span class="fmt18">%代码块边框颜色</span> </pre>
+		<pre>	breaklines=true,  <span class="fmt18">%代码过长则换行</span> </pre>
+		<pre>	numbers=left, <span class="fmt18">%行号在左侧显示</span> </pre>
+		<pre>	numberstyle= <span class="fmt19">\small</span>,<span class="fmt18">%行号字体</span> </pre>
+		<pre>	<span class="fmt18">%keywordstyle=</span><span class="fmt18"> </span><span class="fmt18">\color{blue},%关键字颜色</span> </pre>
+		<pre>	commentstyle=<span class="fmt19">\color</span>{gray}, <span class="fmt18">%注释颜色</span> </pre>
+		<pre>	frame=shadowbox<span class="fmt18">%用方框框住代码块</span> </pre>
+		<pre>} </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">document</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt19">\maketitle</span> </pre>
+		<pre>	<span class="fmt19">\tableofcontents</span> </pre>
+		<pre>	<span class="fmt19">\pagebreak</span> </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt57">希腊字母</span>} </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">center</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">tabular</span></span><span class="fmt20">}</span>{|c|c|c|c|c|c|} </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>		<span class="fmt35">$</span><span class="fmt21">\alpha</span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> A <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt21">\iota</span><span class="fmt35">$</span> <span class="fmt23">&amp;</span>I <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt21">\rho</span><span class="fmt35">$</span><span class="fmt23">&amp;</span>P <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>		<span class="fmt35">$</span><span class="fmt21">\beta</span><span class="fmt35">$</span><span class="fmt23">&amp;</span>B  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\kappa</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span>K <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\sigma</span><span class="fmt35">$</span><span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\Sigma</span><span class="fmt35">$</span> <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>		<span class="fmt35">$</span><span class="fmt21">\gamma</span><span class="fmt35">$</span><span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\Gamma</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\lambda</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt21">\Lambda</span><span class="fmt35">$</span> <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\tau</span><span class="fmt35">$</span><span class="fmt23">&amp;</span>T<span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>		<span class="fmt35">$</span><span class="fmt21">\delta</span><span class="fmt35">$</span><span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\Delta</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt21">\mu</span><span class="fmt35">$</span> <span class="fmt23">&amp;</span>M  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\upsilon</span><span class="fmt35">$</span><span class="fmt23">&amp;</span>Y<span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>		<span class="fmt35">$</span><span class="fmt21">\epsilon</span><span class="fmt35">$</span><span class="fmt23">&amp;</span>E  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\nu</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span>N  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\phi</span><span class="fmt35">$</span><span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\Phi</span><span class="fmt35">$</span><span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>		<span class="fmt35">$</span><span class="fmt21">\zeta</span><span class="fmt35">$</span><span class="fmt23">&amp;</span>Z  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\xi</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\Xi</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\chi</span><span class="fmt35">$</span><span class="fmt23">&amp;</span>X<span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>		<span class="fmt35">$</span><span class="fmt21">\eta</span><span class="fmt35">$</span><span class="fmt23">&amp;</span>H  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34">o</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34">O</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\psi</span><span class="fmt35">$</span><span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\Psi</span><span class="fmt35">$</span><span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>		<span class="fmt35">$</span><span class="fmt21">\theta</span><span class="fmt35">$</span><span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\Theta</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\pi</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\Pi</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\omega</span><span class="fmt35">$</span><span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\Omega</span><span class="fmt35">$</span><span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">tabular</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">center</span></span><span class="fmt20">}</span> </pre>
+		<pre> </pre>
+		<pre>	只能包含在数学命令符之间。 </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt57">常用的数学符号</span>} </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">center</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">tabular</span></span><span class="fmt20">}</span>{|c|c|c|c|c|c|} </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt35">$</span>	<span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt34">*</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt34">/</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\sqrt</span><span class="fmt34">[3]{2}</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt34">A_2^6</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\rightarrow</span><span class="fmt34"> </span><span class="fmt35">$</span>	<span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\leftarrow</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\uparrow</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\downarrow</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\dashleftarrow</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\dashrightarrow</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\to</span><span class="fmt34"> </span><span class="fmt35">$</span>	<span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\vdots</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\ldots</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\cdots</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\ddots</span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\dots</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\aleph</span><span class="fmt34"> </span><span class="fmt35">$</span>	<span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\amalg</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\nabla</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\ell</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\hbar</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\Im</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt21"><span class="fmt47">\leadsto</span></span><span class="fmt35">$</span>	<span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\mho</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\ni</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\partial</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\prod</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\Re</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\sim</span><span class="fmt34"> </span><span class="fmt35">$</span>	<span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varDelta</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varGamma</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varLambda</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varOmega</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varPhi</span><span class="fmt34"> </span><span class="fmt35">$</span>  <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varPi</span><span class="fmt34"> </span><span class="fmt35">$</span>	<span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varPsi</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varSigma</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varTheta</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varUpsilon</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varXi</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varepsilon</span><span class="fmt34"> </span><span class="fmt35">$</span>	<span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varinjlim</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varkappa</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varliminf</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varlimsup</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varsigma</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\vartheta</span><span class="fmt34"> </span><span class="fmt35">$</span>	<span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varpropto</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varprojlim</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\varpi</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\wr</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21"><span class="fmt47">\mathdollar</span></span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21"><span class="fmt47">\mathparagraph</span></span><span class="fmt34"> </span><span class="fmt35">$</span>	<span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21"><span class="fmt47">\mathsection</span></span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\mathsterling</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\mathunderscore</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\wp</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\smile</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\int</span><span class="fmt34">_{0}^{</span><span class="fmt21">\pi</span><span class="fmt34">/2}</span><span class="fmt34"> </span><span class="fmt35">$</span>	<span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\sum</span><span class="fmt34">_{0}^{</span><span class="fmt21">\pi</span><span class="fmt34">}</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\lim\limits</span><span class="fmt34">_{</span><span class="fmt21">\Delta</span><span class="fmt34"> </span><span class="fmt34">x</span><span class="fmt34"> </span><span class="fmt21">\rightarrow</span><span class="fmt34"> </span><span class="fmt34">0}</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\iint</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\iiint</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\oint</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\owns</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\in</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\notin</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\cap</span><span class="fmt34"> </span><span class="fmt35">$</span> <span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\cup</span><span class="fmt34"> </span><span class="fmt35">$</span>	<span class="fmt23">&amp;</span> <span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt21">\dots\dots</span><span class="fmt34"> </span><span class="fmt35">$</span><span class="fmt19">\\</span> </pre>
+		<pre>		<span class="fmt19">\hline</span> </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">tabular</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">center</span></span><span class="fmt20">}</span> </pre>
+		<pre> </pre>
+		<pre>	这些只是一个预览，用于说明Linux字符的丰富和优美，之后我会将字符进行分类附上命令。此处展示的字符都是在数学环境中的，由<span class="fmt19">\$\$</span>包裹。 </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt57">和语言有关的特殊字符</span>} </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">center</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">tabular</span></span><span class="fmt20">}</span>{|c|c|c|c|c|c|} </pre>
+		<pre>			<span class="fmt19">\hline</span> </pre>
+		<pre>			 \`e <span class="fmt23">&amp;</span> \~<span class="fmt39">e</span> <span class="fmt23">&amp;</span> \'e <span class="fmt23">&amp;</span><span class="fmt19">\d</span>{e}<span class="fmt23">&amp;</span><span class="fmt19">\H</span>{e}<span class="fmt23">&amp;</span><span class="fmt19">\r</span>{e}<span class="fmt19">\\</span> </pre>
+		<pre>			<span class="fmt19">\hline</span> </pre>
+		<pre>			\`o<span class="fmt23">&amp;</span>\"o<span class="fmt23">&amp;</span>\.<span class="fmt39">o</span><span class="fmt23">&amp;</span>\=<span class="fmt39">o</span><span class="fmt23">&amp;</span>\^<span class="fmt39">o</span><span class="fmt23">&amp;</span><span class="fmt19">\c</span>{o}<span class="fmt19">\\</span> </pre>
+		<pre>			<span class="fmt19">\hline</span> </pre>
+		<pre>			<span class="fmt19"><span class="fmt47">\k</span></span>{e}<span class="fmt23">&amp;</span><span class="fmt19">\u</span>{e}<span class="fmt23">&amp;</span><span class="fmt19">\v</span>{e}<span class="fmt23">&amp;</span><span class="fmt19">\ae</span><span class="fmt23">&amp;</span><span class="fmt19">\aa</span><span class="fmt23">&amp;</span><span class="fmt19">\oe\\</span> </pre>
+		<pre>			<span class="fmt19">\hline</span> </pre>
+		<pre>			ff<span class="fmt23">&amp;</span>fl<span class="fmt23">&amp;</span>fi<span class="fmt23">&amp;</span><span class="fmt35">$</span><span class="fmt21">\grave</span><span class="fmt34">{e}</span><span class="fmt35">$</span><span class="fmt23">&amp;&amp;</span><span class="fmt19">\\</span> </pre>
+		<pre>			<span class="fmt19">\hline</span> </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">tabular</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">center</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt57">字符bundle？`</span><span class="fmt35"><span class="fmt57">$</span></span><span class="fmt21"><span class="fmt57">\smile</span></span><span class="fmt35"><span class="fmt57">$</span></span><span class="fmt57">`</span>} </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt21">\mathcal</span><span class="fmt34">{uppercase-letters}</span><span class="fmt35">$</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt21">\mathbb</span><span class="fmt34">{textbooks}</span><span class="fmt35">$</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt21">\mathbf</span><span class="fmt34">{helloworld}</span><span class="fmt35">$</span> </pre>
+		<pre>	 </pre>
+		<pre>	这个也不知什么命令导致的，有规律的数学字符表示一串字符。 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">align</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt34">y^*</span><span class="fmt23">&amp;</span><span class="fmt34">=x^ke^{</span><span class="fmt21">\lambda</span><span class="fmt34"> </span><span class="fmt34">x}</span><span class="fmt34"> </span><span class="fmt34">[R_me^{</span><span class="fmt21">\omega</span><span class="fmt34"> </span><span class="fmt34">xi}+</span><span class="fmt21">\bar</span><span class="fmt34"> </span><span class="fmt34">R_me^{-</span><span class="fmt21">\omega</span><span class="fmt34"> </span><span class="fmt34">xi}]</span><span class="fmt34"> </span><span class="fmt19">\\</span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt23">&amp;</span><span class="fmt34">=x^ke^{</span><span class="fmt21">\lambda</span><span class="fmt34"> </span><span class="fmt34">x}[R_m(cos</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34"> </span><span class="fmt34">x+isin</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34"> </span><span class="fmt34">x)+</span><span class="fmt21">\bar</span><span class="fmt34"> </span><span class="fmt34">R_m(cos</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34"> </span><span class="fmt34">x-isin</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34"> </span><span class="fmt34">x)]</span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">align</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	上面这个等式来自同济高等数学351页，相似度98<span class="fmt19">\%</span>，还行。 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\textbf</span>{例 3}	求微分方程<span class="fmt35">$</span><span class="fmt34">y^{"}+y=xcos2x</span><span class="fmt35">$</span>的一个特解.<span class="fmt18">%%(此处中文引号，没办法)\\</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\textbf</span>{解}	所给的方程是二阶常系数非齐次线性方程，且<span class="fmt35">$</span><span class="fmt34">f(x)</span><span class="fmt35">$</span>属于<span class="fmt35">$</span><span class="fmt34">e^{</span><span class="fmt21">\lambda</span><span class="fmt34"> </span><span class="fmt34">x}[P_l(x)cos</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34"> </span><span class="fmt34">x+Q_n(x)sin</span><span class="fmt21">\omega</span><span class="fmt34"> </span><span class="fmt34">x]</span><span class="fmt35">$</span>型（其中<span class="fmt35">$</span><span class="fmt21">\lambda</span><span class="fmt34">=0,</span><span class="fmt21">\omega</span><span class="fmt34">=2,P_l(x)=x,Q_n(x)=0</span><span class="fmt35">$</span>）. </pre>
+		<pre>	 </pre>
+		<pre>	与所给的方程对应的齐次方程为<span class="fmt35">$$</span><span class="fmt34">y^"+y=0,</span><span class="fmt35">$$</span> </pre>
+		<pre>	他的特征根方程为<span class="fmt35">$$</span><span class="fmt34">r^2+1=0.</span><span class="fmt35">$$</span> </pre>
+		<pre>	 </pre>
+		<pre>	由于这里<span class="fmt35">$</span><span class="fmt21">\lambda</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt21">\omega</span><span class="fmt34"> </span><span class="fmt34">i=2i</span><span class="fmt35">$</span>不是特征方程的根，所以应设特解为<span class="fmt35">$$</span><span class="fmt34">y^*=(ax+b)cos2x+(cx+d)sin2x.</span><span class="fmt35">$$</span> </pre>
+		<pre>	把它代入方程，得<span class="fmt35">$$</span><span class="fmt34">(-3ax-3b+4c)cos2x-(3cx+3d+4a)sin2x=xcos2x,</span><span class="fmt35">$$</span> </pre>
+		<pre>	比较两端同类项的系数，得 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$$</span><span class="fmt21">\begin</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt49">cases</span></span><span class="fmt34">}</span> </pre>
+		<pre><span class="fmt34">		</span><span class="fmt34">-3a=1,</span><span class="fmt19">\\</span> </pre>
+		<pre><span class="fmt34">		</span><span class="fmt34">-3b+4c=0,</span><span class="fmt19">\\</span> </pre>
+		<pre><span class="fmt34">		</span><span class="fmt34">-3c=0,</span><span class="fmt19">\\</span> </pre>
+		<pre><span class="fmt34">		</span><span class="fmt34">-3d-4a=0.</span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt21">\end</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt49">cases</span></span><span class="fmt34">}</span><span class="fmt35">$$</span> </pre>
+		<pre>	由此解得<span class="fmt35">$$</span><span class="fmt34">a=-</span><span class="fmt21">\frac</span><span class="fmt34">{1}{3},b=0,c=0,d=</span><span class="fmt21">\frac</span><span class="fmt34">49.</span><span class="fmt35">$$</span> </pre>
+		<pre>	于是求得一个特解为<span class="fmt35">$$</span><span class="fmt34">y^*=-</span><span class="fmt21">\frac</span><span class="fmt34">13xcos2x+</span><span class="fmt21">\frac</span><span class="fmt34">49sin2x.</span><span class="fmt35">$$</span> </pre>
+		<pre>	 </pre>
+		<pre>	上面这个例子高仿352页的第三道题，相似度最接近100<span class="fmt19">\%</span>,细节都注意了。一个完美的组合。 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt57">总结</span>} </pre>
+		<pre>	这些字符要记住真难，不过一来有自动补充，所以记住规律就可以了，最重要的就是符号英文名字，比如希腊字母，只需要知道英文名称就可以了;另外可以使用软件实现，这时候有点word的影子，但是我没见过这么多的字符，word是办不到的，尤其是巨算符的排版。 </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt57">附录</span>} </pre>
+		<pre>	多数字符TeXStudio按照命令名称大小进行了升序排序。 </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">center</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span><span class="fmt24">[language={html}]</span> </pre>
+		<pre><span class="fmt24">	</span><span class="fmt24">&lt;a</span><span class="fmt24"> </span><span class="fmt24">href="file:///usr/share/doc/texstudio/html/latex2e.html">LaTeX2e</span><span class="fmt24"> </span><span class="fmt24">unofficial</span><span class="fmt24"> </span><span class="fmt24">reference</span><span class="fmt24"> </span><span class="fmt24">manual</span><span class="fmt24"> </span><span class="fmt24">(July</span><span class="fmt24"> </span><span class="fmt24">2018)&lt;/a></span> </pre>
+		<pre><span class="fmt24">	</span> </pre>
+		<pre><span class="fmt24">	</span><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span>	 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">center</span></span><span class="fmt20">}</span> </pre>
+		<pre>随便了，这个链接基本上适用，否则，点击TeXStudio的帮助<span class="fmt35">$</span><span class="fmt21">\to</span><span class="fmt35">$</span>LaTeX引用。全英文的网页，不习惯的看我的好了。（计划作一个网页，先画个饼）。 </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">document</span></span><span class="fmt20">}</span> </pre></body></html>

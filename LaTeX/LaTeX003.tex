@@ -1,0 +1,147 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xeCJK}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\author{ason}
+\title{LaTeX特殊符号}
+\lstset{
+	rulesepcolor= \color{gray}, %代码块边框颜色
+	breaklines=true,  %代码过长则换行
+	numbers=left, %行号在左侧显示
+	numberstyle= \small,%行号字体
+	%keywordstyle= \color{blue},%关键字颜色
+	commentstyle=\color{gray}, %注释颜色
+	frame=shadowbox%用方框框住代码块
+}
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\pagebreak
+	\section{希腊字母}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		$\alpha$ 	& A 		& $\iota$ 	&I 				& $\rho$	&P 			\\
+		\hline
+		$\beta$		&B  		&$\kappa$  	&K 				&$\sigma$	&$\Sigma$ 	\\
+		\hline
+		$\gamma$	&$\Gamma$  	&$\lambda$  & $\Lambda$ 	&$\tau$		&T			\\
+		\hline
+		$\delta$	&$\Delta$  	& $\mu$ 	&M  			&$\upsilon$	&Y			\\
+		\hline
+		$\epsilon$	&E  		&$\nu$  	&N  			&$\phi$		&$\Phi$		\\
+		\hline
+		$\zeta$		&Z  		&$\xi$  	&$\Xi$  		&$\chi$		&X			\\
+		\hline
+		$\eta$		&H  		&$o$  		&$O$  			&$\psi$		&$\Psi$		\\
+		\hline
+		$\theta$	&$\Theta$  	&$\pi$  	&$\Pi$  		&$\omega$	&$\Omega$	\\
+		\hline
+	\end{tabular}
+	\end{center}
+
+	只能包含在数学命令符之间。
+	\section{常用的数学符号}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+	$ + $			&$ - $  			&$ * $  		&$ / $  		&$ \sqrt[3]{2} $  		&$ A_2^6 $  			\\
+		\hline
+	$ \rightarrow $	&$ \leftarrow $  	&$ \uparrow $  	&$ \downarrow $ &$ \dashleftarrow $  	&$ \dashrightarrow $  	\\
+		\hline
+	$ \to $			&$ \vdots $  		&$ \ldots $  	&$\cdots$  		&$\ddots$  				&$ \dots $  			\\
+		\hline
+	$ \aleph $		& $ \amalg $ 		& $ \nabla $ 	& $ \ell $ 		&$ \hbar $  			& $ \Im $ 				\\
+		\hline
+	$\leadsto$		& $ \mho $ 			& $ \ni $ 		& $ \partial $ 	& $ \prod $ 			& $ \Re $ 				\\
+		\hline
+	$ \sim $		&$ \varDelta $  	& $ \varGamma $ & $ \varLambda $&$ \varOmega $  		&$ \varPhi $  			\\
+		\hline
+	$ \varPi $		& $ \varPsi $ 		& $ \varSigma $ & $ \varTheta $ & $ \varUpsilon $ 		& $ \varXi $ 			\\
+		\hline
+	$ \varepsilon $	& $ \varinjlim $ 	& $ \varkappa $ & $ \varliminf $& $ \varlimsup $ 		& $ \varsigma $ 		\\
+		\hline
+	$ \vartheta $	& $ \varpropto $ 	& $ \varprojlim $ & $ \varpi $ 	& $ \wr $ 				& $ \mathdollar $ 		\\
+		\hline
+	$\mathparagraph$& $ \mathsection $ 	& $ \mathsterling$& $ \mathunderscore $ & $ \wp $ 		& $ \smile $ 			\\
+		\hline
+	$ \int_{0}^{\pi/2} $	& $ \sum_{0}^{\pi} $ & $ \lim\limits_{\Delta x \rightarrow 0} $ & $ \iint $ & $ \iiint $ & $ \oint $ \\
+		\hline
+	$ \owns $ 		& $ \in $ 			& $ \notin $ 		& $ \cap $ 	& $ \cup $				& $ \dots\dots $		\\
+		\hline
+	\end{tabular}
+	\end{center}
+
+	这些只是一个预览，用于说明Linux字符的丰富和优美，之后我会将字符进行分类附上命令。此处展示的字符都是在数学环境中的，由\$\$包裹。
+	\section{和语言有关的特殊字符}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			 \`e 	& \~e 	& \'e 	&\d{e}	&\H{e}	&\r{e}	\\
+			\hline
+			\`o		&\"o	&\.o	&\=o	&\^o	&\c{o}	\\
+			\hline
+			\k{e}	&\u{e}	&\v{e}	&\ae	&\aa	&\oe	\\
+			\hline
+			ff		&fl		&fi		&$\grave{e}$	&&		\\
+			\hline
+		\end{tabular}
+	\end{center}
+	\section{字符bundle？`$\smile$`}
+	$\mathcal{uppercase-letters}$
+	
+	$\mathbb{textbooks}$
+	
+	$\mathbf{helloworld}$
+	
+	这个也不知什么命令导致的，有规律的数学字符表示一串字符。
+	
+	\begin{align}
+	y^*&=x^ke^{\lambda x} [R_me^{\omega xi}+\bar R_me^{-\omega xi}] \\
+	&=x^ke^{\lambda x}[R_m(cos \omega x+isin \omega x)+\bar R_m(cos \omega x-isin \omega x)]
+	\end{align}
+	
+	上面这个等式来自同济高等数学351页，相似度98\%，还行。
+	
+	\textbf{例 3}	求微分方程$y^{"}+y=xcos2x$的一个特解.%%(此处中文引号，没办法)\\
+	
+	\textbf{解}	所给的方程是二阶常系数非齐次线性方程，且$f(x)$属于$e^{\lambda x}[P_l(x)cos \omega x+Q_n(x)sin\omega x]$型（其中$\lambda=0,\omega=2,P_l(x)=x,Q_n(x)=0$）.
+	
+	与所给的方程对应的齐次方程为$$y^"+y=0,$$
+	他的特征根方程为$$r^2+1=0.$$
+	
+	由于这里$\lambda +\omega i=2i$不是特征方程的根，所以应设特解为$$y^*=(ax+b)cos2x+(cx+d)sin2x.$$
+	把它代入方程，得$$(-3ax-3b+4c)cos2x-(3cx+3d+4a)sin2x=xcos2x,$$
+	比较两端同类项的系数，得
+	
+	$$\begin{cases}
+		-3a=1,\\
+		-3b+4c=0,\\
+		-3c=0,\\
+		-3d-4a=0.
+	\end{cases}$$
+	由此解得$$a=-\frac{1}{3},b=0,c=0,d=\frac49.$$
+	于是求得一个特解为$$y^*=-\frac13xcos2x+\frac49sin2x.$$
+	
+	上面这个例子高仿352页的第三道题，相似度最接近100\%,细节都注意了。一个完美的组合。
+	
+	\section{总结}
+	这些字符要记住真难，不过一来有自动补充，所以记住规律就可以了，最重要的就是符号英文名字，比如希腊字母，只需要知道英文名称就可以了;另外可以使用软件实现，这时候有点word的影子，但是我没见过这么多的字符，word是办不到的，尤其是巨算符的排版。
+	\section{附录}
+	多数字符TeXStudio按照命令名称大小进行了升序排序。
+	\begin{center}
+	
+		\begin{lstlisting}[language={html}]
+	<a href="file:///usr/share/doc/texstudio/html/latex2e.html">LaTeX2e unofficial reference manual (July 2018)</a>
+	
+	\end{lstlisting}	
+	
+	\end{center}
+随便了，这个链接基本上适用，否则，点击TeXStudio的帮助$\to$LaTeX引用。全英文的网页，不习惯的看我的好了。（计划作一个网页，先画个饼）。
+\end{document}
